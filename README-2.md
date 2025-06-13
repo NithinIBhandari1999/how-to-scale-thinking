@@ -33,3 +33,33 @@ Bandwidth in TB = 3399.3273973464966 TB
 
 Bandwidth in PB =  3399.3273973464966 TB / 1024
 Bandwidth in PB = 3.319655661471188 PB
+
+# Additional thoughts
+
+## Cost
+
+### Bandwidth Cost
+Bandwidth COST as per digitalocean: $10 per TB
+Bandwidth COST as per digitalocean: $3399 * $10
+Bandwidth COST as per digitalocean: $33990 / bandwidth per year
+
+### Storage Cost
+Storage cost as per digitalocean: $20 per TB / per month
+Storage cost as per digitalocean: $3399 * $20 / per month
+Storage cost as per digitalocean: $67980 / storage cost / per month
+
+## How to improve
+
+### Technique 1: Compression
+Advantage: Our bandwidth may be reduced by around 50%
+Disadvantage: Our compute expenses will increase if there is on demand compression.
+
+### Technique 2: Local storage and search in client side (if possible)
+Advantage: Bandwidth and storage cost be reduced by around 50-70%.
+Disadvantage: Complexity in revalidation of cache.
+
+## Additional note:
+1. Compression, Maybe beneficial in group chat as, compute compression once, and store once (additional storage charges), and send any number of time.
+
+## Potential issue:
+1. DDOS attack
